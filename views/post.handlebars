@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=1050">
+	<title>{{{ title }}}</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/main_style.css">
+	<link rel="stylesheet" href="../styles/post_style.css">
+	<link rel="stylesheet" href="../styles/pda_style.css" media="screen and (max-width: 1023px)">
+	<link rel="stylesheet" href="../styles/mobile_style.css" media="screen and (max-width: 767px)">
+</head>
+<body>
+	<header>
+		<h1>{{{ title }}}</h1>
+		<ul>
+			{{#each menu}}
+			{{#if active}}
+				<li class="active"><a href="{{ url }}">{{ name }}</a></li>
+			{{else}}
+				<li><a href="{{ url }}">{{ name }}</a></li>
+			{{/if}}
+			{{/each}}
+			<li class="search">
+				<form action="">
+					<input type="text" name="search">
+					<input type="submit" name="button" value="">
+				</form>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<div class="post">
+			<div class="text">
+				<div class="date">{{ post.date }}</div>
+				<div class="category">{{ post.category }}</div>
+				<h2>{{ post.title }}</h2>
+				<div class="line"></div>
+				<p>{{ post.text }}</p>
+				<div class="social"></div>
+				<ul>
+					{{#each post.tags}}
+					<li>#{{ this }}</li>
+					{{/each}}
+				</ul>
+				<div class="clear-fix"></div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="content">
+			<h1>{{{ title }}}</h1>
+			<ul>
+				{{#each menu}}
+			{{#if active}}
+				<li class="active"><a href="{{ url }}">{{ name }}</a></li>
+			{{else}}
+				<li><a href="{{ url }}">{{ name }}</a></li>
+			{{/if}}
+			{{/each}}
+				<li class="search">
+					<form action="">
+						<input type="text" name="search">
+						<input type="submit" name="button" value="">
+					</form>
+				</li>
+			</ul>
+			<div class="clear-fix"></div>
+			<div class="line"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aspernatur ducimus aperiam quam neque nesciunt cupiditate earum tempora dolor expedita.</p>
+			<div class="line"></div>
+			<p>© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by Dmitry Vasilenko</p>
+			<div class="social">
+				<a href="#" class="icon facebook"></a>
+				<a href="#" class="icon twitter"></a>
+				<a href="#" class="icon instagram"></a>
+				<a href="#" class="icon pinterest"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

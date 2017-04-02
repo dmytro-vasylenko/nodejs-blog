@@ -3,26 +3,23 @@ $width: 950px
 *
 	margin: 0
 	padding: 0
-	font-family: Arial, sans-serif
+	font-family: "Roboto", Arial, sans-serif
 
 body
 	background: #f7f9fc
 
 header
 	width: $width
-	height: 190px
-	margin: 0 auto
+	height: 60px
+	margin: 80px auto 0
 
 	h1
-		position: relative
-		top: 80px
 		font-size: 32px
 		color: #333333
 		float: left
 
 	ul
-		position: relative
-		top: 90px
+		margin-top: 10px
 		float: right
 
 	li
@@ -33,6 +30,7 @@ header
 		font-weight: bold
 		margin-right: 35px
 		height: 23px
+		transition: all 0.4s
 
 		a
 			color: #333333
@@ -69,72 +67,73 @@ main
 		background: white
 		padding-bottom: 80px
 		margin-bottom: 50px
+		box-shadow: 0 0 5px grey
+		position: relative
 
-	img
-		width: $width
-		height: 530px
+		img
+			width: $width
+			height: 530px
 
-	.category
-		color: white
-		padding: 11px
-		background: #5c6bc0
-		float: right
-		margin-right: -14px
-		margin-top: 20px
-		font-weight: bold
-
-	.date
-		color: #bdbdbd
-		font-size: 15px
-		margin-top: 50px
-		margin-left: 100px
-		float: left
-		font-weight: bold
-
-	.text
-		margin: 0 100px 0 100px
-		a
-			margin-top: 35px
-			color: #5c6bc0
-			text-transform: uppercase
-			font-size: 17px
-			text-decoration: none
+		.category
+			color: white
+			padding: 11px
+			background: #5c6bc0
 			font-weight: bold
+			position: absolute
+			right: -15px
+			top: 10px
+
+		.text
+			margin: 0 100px 0 100px
+			padding-top: 80px
+
+			a
+				margin-top: 35px
+				color: #5c6bc0
+				text-transform: uppercase
+				font-size: 17px
+				text-decoration: none
+				font-weight: bold
+				float: left
+
+			.date
+				color: #bdbdbd
+				font-size: 15px
+				float: left
+				font-weight: bold
+		h2
+			clear: both
+			padding-top: 25px
+			font-size: 30px
+
+		.line
+			height: 3px
+			width: 100%
+			background: #eeeeee
+			margin-top: 40px
+			margin-bottom: 40px
+		p
+			font-size: 16px
+			line-height: 29px
+			margin-bottom: 25px
+
+			&:last-child
+				margin-bottom: 0
+
+
+		ul
+			float: right
+			margin-top: 35px
+
+		li
 			float: left
+			list-style: none
+			margin-right: 10px
+			color: rgba(0, 0, 0, 0.3)
+			font-weight: bold
 
-	h2
-		clear: both
-		padding-top: 25px
-		font-size: 30px
-
-	.line
-		height: 3px
-		width: 100%
-		background: #eeeeee
-		margin-top: 40px
-		margin-bottom: 40px
-	p
-		font-size: 16px
-		line-height: 29px
-		margin-bottom: 25px
-
-		&:last-child
-			margin-bottom: 0
-
-
-	ul
-		float: right
-		margin-top: 35px
-
-	li
-		float: left
-		list-style: none
-		margin-right: 10px
-		color: rgba(0, 0, 0, 0.3)
-		font-weight: bold
-
-		&:last-child
-			margin-right: 0
+			&:last-child
+				margin-right: 0
 
 	.pagination
 		width: 40*3+16*2px
@@ -146,18 +145,25 @@ main
 			width: 40px
 			height: 40px
 			text-align: center
-			line-height: 40px
+			line-height: 45px
 			margin-right: 16px
 			display: block
 			float: left
 			text-decoration: none
 			font-weight: bold
+			box-shadow: 0 0 5px grey
+			border-radius: 100%
+			transition: all 0.4s
 
 			&:last-child
 				margin-right: 0
 
+			&:hover
+				background: #a4afee
+				color: white
+
 		.active
-			background: #5c6bc0
+			background: #5c6bc0 !important
 			color: white
 
 footer
@@ -172,7 +178,7 @@ footer
 
 	h1
 		font-size: 27px
-		color: rgba(0, 0, 0, 0.2)
+		color: rgba(0, 0, 0, 0.6)
 		text-align: center
 		padding-top: 67px
 
@@ -196,9 +202,13 @@ footer
 			font-size: 14px
 			font-weight: bold
 			text-transform: uppercase
+			transition: all 0.4s
+
+			&:hover
+				color: rgba(0, 0, 0, 0.8)
 
 	.active a
-		color: rgba(1, 1, 1, 0.4)
+		color: rgba(0, 0, 0, 0.4) !important
 
 	input[type=text]
 		display: none
@@ -213,19 +223,19 @@ footer
 	.line
 		height: 3px
 		width: 100%
-		background: rgba(0, 0, 0, 0.05)
+		background: rgba(0, 0, 0, 0.1)
 		margin-top: 40px
 		margin-bottom: 40px
 
 	p
 		text-align: center
-		color: rgba(1, 1, 1, 0.2)
+		color: rgba(0, 0, 0, 0.6)
 		font-size: 14px
 		line-height: 24px
 
 	.social
 		width: 165px
-		height: 22px
+		height: 23px
 		margin: 40px auto 0 auto
 
 	.icon
@@ -234,8 +244,13 @@ footer
 		display: block
 		float: left
 		margin-right: 20px
+		transition: all 0.4s
+
 		&:last-child
 			margin-right: 0
+
+		&:hover
+			transform: scale(0.9)
 
 	.facebook
 		background: url(../img/facebook.png) no-repeat

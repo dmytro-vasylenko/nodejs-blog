@@ -1,0 +1,250 @@
+$width: 950px
+
+*
+	margin: 0
+	padding: 0
+	font-family: Arial, sans-serif
+
+body
+	background: #f7f9fc
+
+header
+	width: $width
+	height: 190px
+	margin: 0 auto
+
+	h1
+		position: relative
+		top: 80px
+		font-size: 32px
+		color: #333333
+		float: left
+
+	ul
+		position: relative
+		top: 90px
+		float: right
+
+	li
+		list-style: none
+		text-transform: uppercase
+		font-size: 13px
+		float: left
+		font-weight: bold
+		margin-right: 35px
+		height: 23px
+
+		a
+			color: #333333
+			text-decoration: none
+
+		&:last-child
+			margin-right: 0
+
+		&:hover
+			border-bottom: 3px solid #5c6bc0
+
+	.search
+		float: right
+		margin-top: -4px
+
+		input[type=text]
+			display: none
+
+		input[type=submit]
+			width: 19px
+			height: 20px
+			background: url(../img/search.png) no-repeat
+			border: none
+			cursor: pointer
+
+.clear-fix
+	clear: both
+
+main
+	width: $width
+	margin: 0 auto
+
+	.post
+		background: white
+		padding-bottom: 80px
+		margin-bottom: 50px
+
+	img
+		width: $width
+		height: 530px
+
+	.category
+		color: white
+		padding: 11px
+		background: #5c6bc0
+		float: right
+		margin-right: -14px
+		margin-top: 20px
+		font-weight: bold
+
+	.date
+		color: #bdbdbd
+		font-size: 15px
+		margin-top: 50px
+		margin-left: 100px
+		float: left
+		font-weight: bold
+
+	.text
+		margin: 0 100px 0 100px
+		a
+			margin-top: 35px
+			color: #5c6bc0
+			text-transform: uppercase
+			font-size: 17px
+			text-decoration: none
+			font-weight: bold
+			float: left
+
+	h2
+		clear: both
+		padding-top: 25px
+		font-size: 30px
+
+	.line
+		height: 3px
+		width: 100%
+		background: #eeeeee
+		margin-top: 40px
+		margin-bottom: 40px
+	p
+		font-size: 16px
+		line-height: 29px
+		margin-bottom: 25px
+
+		&:last-child
+			margin-bottom: 0
+
+
+	ul
+		float: right
+		margin-top: 35px
+
+	li
+		float: left
+		list-style: none
+		margin-right: 10px
+		color: rgba(0, 0, 0, 0.3)
+		font-weight: bold
+
+		&:last-child
+			margin-right: 0
+
+	.pagination
+		width: 40*3+16*2px
+		margin: 0 auto
+
+		a
+			background: white
+			color: rgba(0, 0, 0, 0.8)
+			width: 40px
+			height: 40px
+			text-align: center
+			line-height: 40px
+			margin-right: 16px
+			display: block
+			float: left
+			text-decoration: none
+			font-weight: bold
+
+			&:last-child
+				margin-right: 0
+
+		.active
+			background: #5c6bc0
+			color: white
+
+footer
+	height: 530px
+	width: 100%
+	background: #5c6bc0
+	margin-top: 120px
+
+	.content
+		width: 757px
+		margin: 0 auto
+
+	h1
+		font-size: 27px
+		color: rgba(0, 0, 0, 0.2)
+		text-align: center
+		padding-top: 67px
+
+	ul
+		text-align: center
+		width: 420px
+		height: 20px
+		margin: 65px auto 0 auto
+
+	li
+		float: left
+		list-style: none
+		margin-right: 40px
+
+		&:last-child
+			margin-right: 0
+
+		a
+			text-decoration: none
+			color: white
+			font-size: 14px
+			font-weight: bold
+			text-transform: uppercase
+
+	.active a
+		color: rgba(1, 1, 1, 0.4)
+
+	input[type=text]
+		display: none
+
+	input[type=submit]
+		width: 19px
+		height: 20px
+		background: url(../img/search.png) no-repeat
+		border: none
+		cursor: pointer
+
+	.line
+		height: 3px
+		width: 100%
+		background: rgba(0, 0, 0, 0.05)
+		margin-top: 40px
+		margin-bottom: 40px
+
+	p
+		text-align: center
+		color: rgba(1, 1, 1, 0.2)
+		font-size: 14px
+		line-height: 24px
+
+	.social
+		width: 165px
+		height: 22px
+		margin: 40px auto 0 auto
+
+	.icon
+		width: 26px
+		height: 26px
+		display: block
+		float: left
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+
+	.facebook
+		background: url(../img/facebook.png) no-repeat
+
+	.twitter
+		background: url(../img/twitter.png) no-repeat
+
+	.instagram
+		background: url(../img/instagram.png) no-repeat
+
+	.pinterest
+		background: url(../img/pinterest.png) no-repeat

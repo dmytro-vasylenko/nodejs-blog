@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,UAAK,CACJ,cAAc,CAAE,IAAI,CAEpB,oBAAS,CACR,KAAK,CAAE,IAAI,CACX,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,CAAC,CACR,UAAU,CAAE,UAAU,CAGvB,gBAAK,CACJ,MAAM,CAAE,aAAa,CAErB,sBAAK,CACJ,OAAO,CAAE,IAAI,CAEf,oBAAW,CACV,WAAW,CAAE,IAAI",
+"sources": ["mobile_style.sass"],
+"names": [],
+"file": "mobile_style.css"
+}
